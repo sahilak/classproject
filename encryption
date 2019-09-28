@@ -1,0 +1,27 @@
+#include<iostream.h>
+int main()
+{
+              Using namespace std;
+	char A[5],B[5],C[5];
+	int n,i,m;
+	cout<<"enter information :\n\n" ;
+	for(i=0;i<5;i++)
+	{cin>>A[i];
+    n=(int)A[i]; //for checking ASCII value of indiviual characters.
+	n=n+2;
+	B[i]=n;}
+	cout<<"Enter Mode (1 or 2)\n 1).Encryption \n 2).Decryption \n";
+	cin>>m;
+	if(m==1)
+	{cout<<"Encrypted information :";
+	for(i=0;i<5;i++)
+	cout<<B[i]; 
+	}
+	else if(m==2)
+	{cout<<"decrypted information :";
+	for(i=0;i<5;i++)
+	cout<<A[i]; 
+	}
+	cout<<"\n\n\n";
+	return(0)  ;
+}
